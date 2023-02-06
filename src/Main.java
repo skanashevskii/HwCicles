@@ -83,11 +83,11 @@ public class Main {
     public static void task9() {
         System.out.println("Задача 9");
         // Пишем код для задачи 9
-        double total = 0;
-        double monthMoneySave=29000;
-        double monthlyPercent = 0.01;
+        float total = 0;
+        float monthMoneySave=29000;
+        float monthlyPercent = 0.01f;
         for (int i = 1; i <= 12; i++) {
-            total= total+monthMoneySave+monthMoneySave*monthlyPercent;
+            total= total+monthMoneySave+total*monthlyPercent;
             System.out.println("Месяц" +i+ " сумма накоплений равна " +total+ " рублей");
         }
     }
